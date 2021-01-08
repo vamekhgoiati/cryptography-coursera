@@ -1,0 +1,20 @@
+apply plugin: 'java'
+
+group = 'org.coursera'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 11
+targetCompatibility = 11
+
+
+dependencies {
+    implementation group: 'commons-codec', name: 'commons-codec', version: '1.15'
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.7.0'
+}
+
+repositories {
+    mavenCentral()
+}
+
+test {
+    useJUnitPlatform()
+}
